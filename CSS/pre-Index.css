@@ -19,7 +19,7 @@ body{
 
 }
 
-
+/*     Pic     */
 
 img{
     display: block;
@@ -88,7 +88,17 @@ img{
     top: 50%;
 }
 
+.pic8{
+    height: 20px;
+    width: 20px;
+    transform: rotate(-50deg);
+    right: 45%;
+    top: 50%;
+}
 
+/*     Pic     */
+
+/*     BG     */
 
 .bg1{
 
@@ -99,18 +109,29 @@ img{
     top: 0;
     bottom: 0;
     border-radius: 50%;
-    box-shadow: 0px 0px 150px #8A62A2;
+    box-shadow: 0px 0px 4000px #8A62A2;
 
 }
 
-
-.bg1:hover{
-    transition: 3s;
-    border-radius: 50%;
-    box-shadow: 0px 0px 1000px #a96fbc;
-
+.bg1{
+    animation: warp 4s infinite;
 }
 
+@keyframes warp{
+    0%{
+        box-shadow: 0px 0px 10000px #8A62A2;
+    }
+    50%{
+        box-shadow: 0px 0px 6000px #9933CC;
+    }
+    100%{
+        box-shadow: 0px 0px 10000px #8A62A2;
+    }
+}
+
+/*     BG     */
+
+/*   ส่วนของปุ่มกด*/
 .playimg{
     width: 350px;
     height: 350px;
@@ -143,6 +164,6 @@ img{
     color: red;
     font-size: 50px;
 
-
 }
 
+/*   ส่วนของปุ่มกด*/

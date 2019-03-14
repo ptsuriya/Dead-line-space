@@ -266,6 +266,7 @@ to {bottom: 40%}}
     right: 60.8%;
     top: 85%;
     bottom: 50%;
+    margin-left: calc(50vw-175px);
 }
 .play{
     animation: play 3s infinite;

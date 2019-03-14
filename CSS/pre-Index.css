@@ -131,9 +131,9 @@ img{
 .play{
     display: block;
     position:absolute;
-    right: 64vw;
+    right: 62%;
     top: 85%;
-
+    bottom: 50%;
 
 }
 

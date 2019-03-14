@@ -261,25 +261,16 @@ to {bottom: 40%}}
 
 .play{
     display: block;
+    transform: translate(-50%,-50%);
     position:absolute;
-    right: 62%;
+    right: 60.8%;
     top: 85%;
     bottom: 50%;
 }
 .play{
     animation: play 3s infinite;
 }
-@keyframes play{
-    0%{
-        right: 62%;
-    }
-    50%{
-        right: 60%;
-    }
-    100%{
-        right: 62%;
-    }
-}
+
 
 
 .playimg:hover{

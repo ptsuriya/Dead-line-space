@@ -1,21 +1,21 @@
 body{
     background-color: black;
+    width: 50vw;
+    height:50vh;
 }
 
 
 .name{
-    position: fixed;
+    position: absolute;
     font-family: 'Permanent Marker', cursive;
     color: white;
     text-shadow: 7px 3px hsl(80,70%,50%);
     font-size: 79px;
-    margin: 4%;
+    margin: 2%;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
-
-
 
 }
 
@@ -111,15 +111,38 @@ img{
 
 }
 
-.Play{
+.playimg{
+    width: 350px;
+    height: 350px;
+}
+
+.play{
     display: block;
-    position: absolute;
-    margin: auto;
-    width: 250px;
-    height: 100px;
-    left: 0;
-    right: 0;
-    top: 10;
-    bottom: 0;
-    background-image:url('../BGI/17.png');  
+    position:absolute;
+    right: 62%;
+    top: 85%;
+    bottom: 50%;
+
+}
+
+
+.playimg:hover{
+
+    transition: 0.2s;
+    width: 360px;
+    height: 360px;
+
+}
+
+.textplay{
+
+    display: block;
+    position:absolute;
+    top: 85%;
+    right: 45%;
+    color: red;
+    font-size: 50px;
+
+
+}
 

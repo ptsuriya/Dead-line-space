@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+}
+
+
+.name{
+    position: fixed;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 7px 3px hsl(80,70%,50%);
+    font-size: 79px;
+    margin: 4%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+
+
+}
+
+
+
+img{
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.pic1{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.pic2{
+    height: 100px;
+    width: 100px;
+    transform: rotate(50deg);
+    left: 45%;
+    bottom: 45%
+}
+
+.pic3{
+
+    height: 100px;
+    width: 100px;
+    transform: rotate(75deg);
+    left: 50%;
+    top: 45%;
+    bottom: 45%;
+}
+
+.pic4{
+    height: 100px;
+    width: 100px;
+    transform: rotate(120deg);
+    left: 35%;
+    top: 50%;
+}
+.pic5{
+    height: 100px;
+    width: 100px;
+    transform: rotate(-50deg);
+    right: 45%;
+    bottom: 45%;
+}
+
+.pic6{
+    height: 100px;
+    width: 100px;
+    transform: rotate(-50deg);
+    right: 55%;
+    bottom: 2%;
+}
+
+.pic7{
+    height: 100px;
+    width: 100px;
+    transform: rotate(-50deg);
+    right: 35%;
+    top: 50%;
+}
+
+
+
+.bg1{
+
+    height: 500px;
+    width: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 150px #8A62A2;
+
+}
+
+
+.bg1:hover{
+    transition: 3s;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1000px #a96fbc;
+
+}
+
+.Play{
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 10;
+    bottom: 0;
+    background-image: url(https://lifestyle.campus-star.com/app/uploads/2018/07/alien.jpg);
+

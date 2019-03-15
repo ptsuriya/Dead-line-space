@@ -45,7 +45,10 @@ function main(){
 
 function show(){
     setPosition(rocket); 
+    
     setPosition(laser);
+    
+    
     for (var i = 0; i < enemies.length; i++) {
     setPosition(enemies[i]);
   }
@@ -154,17 +157,20 @@ function ckshowposition(){ // This Function For checking position of ROCKET.
 
 function addEnemy() {
   var interval = 50;
-  if (iterations > 1500) {
+  if(distance > 4000){
+  	interval = 0;
+  }
+  else if (distance > 3000) {
     interval = 5;
-  } else if (iterations > 1000) {
-    interval = 70;
-  } else if (iterations > 500) {
-    interval = 100;
+  } else if (distance > 2000) {
+    interval = 10;
+  } else if (distance > 1000) {
+    interval = 20;
   }
   
   if (getRandom(0, interval) == 0) {
     var elementName = 'ENEMY'+getRandom(0, 10000000);
-    var enemy = box(elementName, getRandom(5, 365), 0, 35, 35);
+    var enemy = box(elementName, getRandom(5, 365), 0, getRandom(35,50), getRandom(30,50));
     
     var element = document.createElement('div');
     element.id = enemy.idee;
@@ -217,6 +223,7 @@ function retry(){
 	stat = 0;
 	last_looprun = 0;
 	score = 0;
+	distance = 0;
 	rocket = box('ROCKET', 180, 560, 40, 40);
 	laser = box('LASER', -1000, 330, 2, 50);
 	iterations = 0;

@@ -74,6 +74,8 @@ body{
 
 #BG{
 }
-.play{
+#retry{
+	width: 5px;
+	left: -50;
 }
 

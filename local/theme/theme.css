@@ -1,0 +1,86 @@
+body{
+	background-color: hsl(230 100% 30%);
+	margin: 0;
+}
+
+.BG{
+	margin: 10px 36%;
+	width: 400px;
+	height: 600px;
+	padding: 10px;
+	border: 5px solid blue;
+	position: fixed;
+	background: black;
+}
+
+#ROCKET{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 10;
+	left: 10;
+	background-color: red;
+	border: 5px solid yellow;
+}
+
+#ENEMY{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: yellow;
+	border: 5px solid; 
+	border-color: red;
+	position: absolute;
+}
+
+#LASER{
+    background: #00ff00;
+    width: 5px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.enemy {
+  background: yellow;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border: 5px dotted red;
+  top: -40;
+  left: -500;
+}
+
+.CEND {
+
+}
+
+#END {
+	text-align: center;
+	background: red;
+	position: absolute;
+	width: 420px;
+	height: 620px;
+	top: 0;
+	left: 0;
+	color: black;
+	visibility: hidden;
+	z-index: 3;
+}
+
+#textover{
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: absolute;
+	width: 300px;
+	border: 5px solid yellow;
+	top: 240px;
+	left: 50px;
+}
+
+#BG{
+}
+
+

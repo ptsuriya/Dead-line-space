@@ -156,27 +156,35 @@ function ckshowposition(){ // This Function For checking position of ROCKET.
 }
 
 function addEnemy() {
-  var interval = 50;
-  if(distance > 4000){
-  	interval = 0;
-  }
-  else if (distance > 3000) {
+  var interval = 30;
+  if(distance > 5000){
+  	interval = 1;
+  }else if (distance > 4000) {
+    interval = 3;
+  }else if (distance > 3500) {
     interval = 5;
-  } else if (distance > 2000) {
-    interval = 10;
-  } else if (distance > 1000) {
+  }else if (distance > 3000) {
+    interval = 7;
+  }else if (distance > 2500) {
+    interval = 12;
+  }else if (distance > 2000) {
+    interval = 16;
+  } else if (distance > 1500) {
     interval = 20;
+  } else if (distance > 1000) {
+    interval = 25;
   }
   
   if (getRandom(0, interval) == 0) {
     var elementName = 'ENEMY'+getRandom(0, 10000000);
     var enemy = box(elementName, getRandom(5, 365), 0, getRandom(35,50), getRandom(30,50));
-    
+    // var randompic = '"Monsters/'+getRandom(1, 40)+'.png"';
+    // console.log(randompic);
     var element = document.createElement('div');
     element.id = enemy.idee;
-    element.className = 'enemy'; 
+    element.className = 'enemy';
     document.body.children[0].appendChild(element);
-    
+    // document.getElementById(enemy.idee).src = randompic;
     enemies[enemies.length] = enemy;
   }
 }

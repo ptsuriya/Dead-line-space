@@ -75,7 +75,11 @@ body{
 #BG{
 }
 #retry{
+<<<<<<< HEAD
 	width: 5px;
 	left: 50;
+=======
+	margin: 50%; 
+>>>>>>> parent of 020dbd5... add
 }
 

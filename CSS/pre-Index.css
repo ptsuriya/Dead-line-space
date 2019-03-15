@@ -240,6 +240,13 @@ to {bottom: 40%}}
 /*     BG     */
 
 /*   ส่วนของปุ่มกด*/
+
+#play1{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    right:100px;
+}
 .playimg{
     width: 350px;
     height: 350px;
@@ -260,12 +267,6 @@ to {bottom: 40%}}
 }
 
 .play{
-    display: block;
-    transform: translate(-50%,-50%);
-    position:absolute;
-    right: 60.8%;
-    top: 85%;
-    bottom: 50%;
 }
 .play{
     animation: play 3s infinite;
@@ -291,5 +292,6 @@ to {bottom: 40%}}
     font-size: 50px;
 
 }
+
 
 /*   ส่วนของปุ่มกด*/

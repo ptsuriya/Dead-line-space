@@ -19,18 +19,9 @@ body{
 	position: absolute;
 	top: 10;
 	left: 10;
-	background-color: red;
-	border: 5px solid yellow;
-}
-
-#ENEMY{
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-color: yellow;
-	border: 5px solid; 
-	border-color: red;
-	position: absolute;
+	overflow: hidden;
+	background-image: url("playerShip2_orange.png");
+	background-size: 100% 100%, auto;
 }
 
 #LASER{

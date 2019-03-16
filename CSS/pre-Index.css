@@ -245,7 +245,9 @@ to {bottom: 40%}}
 
 #play1{
     position: absolute;
-    left:50vw;
+    top: 500px;
+    left: 300px;
+    right:100px;
 }
 .playimg{
     width: 350px;

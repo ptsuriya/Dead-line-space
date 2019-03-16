@@ -2,7 +2,11 @@
 
 
 var rocket = box('ROCKET', 180, 560, 40, 40);
+<<<<<<< HEAD
+var laser = box('LASER', -1000, 330, 10, 50);
+=======
 var laser = box('LASER', -1000, 330, 5, 50);
+>>>>>>> eefe9ecdec9b183569ac8226122916a4688259c3
 var left=37, right=39, up=38, down=40, specbar=32; // Key code each button.
 var speedrocket = 5;
 var controller = new Object();
@@ -156,28 +160,80 @@ function ckshowposition(){ // This Function For checking position of ROCKET.
 }
 
 function addEnemy() {
-  var interval = 50;
-  if(distance > 4000){
+  var interval = 30;
+  if(distance > 6000){
   	interval = 0;
-  }
-  else if (distance > 3000) {
-    interval = 5;
-  } else if (distance > 2000) {
+  }else if (distance > 5000) {
+    interval = 2;
+  } else if (distance > 4500) {
+    interval = 4;
+  } else if (distance > 4000) {
+    interval = 7;
+  }else if (distance > 3000) {
     interval = 10;
-  } else if (distance > 1000) {
-    interval = 20;
+  } else if (distance > 2500) {
+    interval = 13;
+  } else if (distance > 2000) {
+    interval = 16;
+  }else if (distance > 1500) {
+    interval = 19;
+  } else if (distance > 10000) {
+    interval = 22;
+  } else if (distance > 500) {
+    interval = 25;
   }
   
   if (getRandom(0, interval) == 0) {
     var elementName = 'ENEMY'+getRandom(0, 10000000);
-    var enemy = box(elementName, getRandom(5, 365), 0, getRandom(35,50), getRandom(30,50));
+    var enemy = box(elementName, getRandom(5, 365), 0, getRandom(50,70), getRandom(50,70));
     
     var element = document.createElement('div');
-    element.id = enemy.idee;
-    element.className = 'enemy'; 
-    document.body.children[0].appendChild(element);
     
+    var randompic = 'BGI/Monsters/1.png';
+    // var image = document.createElement("IMG");
+    // var imageParent = document.getElementById(enemy.idee);
+    element.id = enemy.idee;
+    if(distance > 6000){
+      element.className = 'enemy10';
+    }else if (distance > 5000) {
+      element.className = 'enemy9';
+    } else if (distance > 4500) {
+      element.className = 'enemy8';
+    } else if (distance > 4000) {
+      element.className = 'enemy7';
+    }else if (distance > 3000) {
+      element.className = 'enemy6';
+    } else if (distance > 2500) {
+      element.className = 'enemy5';
+    } else if (distance > 2000) {
+      element.className = 'enemy4';
+    }else if (distance > 1500) {
+      element.className = 'enemy3';
+    } else if (distance > 1000) {
+      element.className = 'enemy2';
+    } else if (distance > 500) {
+      element.className = 'enemy1';
+    }
+    else{
+      element.className = 'enemy';
+    }
+    // var h = document.getElementsByClassName('enemy');
+    //document.getElementById(enemy.idee).src = "BGI/Monsters/2.png";
+    //element.src = 'BGI/Monsters/2.png'
+    // h.style.backgroundImage = "url('abc.png')";
+    // h.style.backgroundSize = "100% 100%, auto";
+    ////document.body.style.backgroundImage = "url('img_tree.png')";
+    // h.innerHTML = '<img src="'+randompic+'" />';
+    // img.src = randompic;
+    // document.getElementById(enemy.idee).appendChild(element);
+    document.body.children[0].appendChild(element);
+    //document.getElementById(enemy.idee).style.backgroundImage = url('BGI/Monsters/2.png');
+    
+    // console.log(document.getElementById(enemy.idee).src);
+    // console.log(document.getElementById(enemy.idee).style.backgroundImage);
     enemies[enemies.length] = enemy;
+
+
   }
 }
 

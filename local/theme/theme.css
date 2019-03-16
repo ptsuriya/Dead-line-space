@@ -1,5 +1,5 @@
 body{
-	background-color: black;
+	background-color: hsl(230 100% 30%);
 	margin: 0;
 }
 
@@ -8,9 +8,9 @@ body{
 	width: 400px;
 	height: 600px;
 	padding: 10px;
-	border: 10px outset #f3a4f5;
+	border: 5px solid blue;
 	position: fixed;
-	background-image: url("Bggame.gif");
+	background: black;
 }
 
 #ROCKET{
@@ -26,7 +26,6 @@ body{
 
 #LASER{
     background-image: url("laserRed06.png");
-    box-shadow: 0px 0px 50px red;
     background-size: 100% 100%, auto;
     width: 20px;
     height: 20px;
@@ -35,24 +34,124 @@ body{
     position: absolute;
 }
 
-.enemy {
-  background: yellow;
+.enemy1 {
   width: 35px;
   height: 35px;
   position: absolute;
-  border: 5px dotted red;
   top: -40;
   left: -500;
+   background-image: url("mons1/5.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
 }
+.enemy2 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/29.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy3 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/14.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy4 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/22.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy5 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/33.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy6 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/9.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy7 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/24.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy8 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/35.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy9 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/3.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy10 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/15.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy {
+   width: 35px;
+   height: 35px;
+   position: absolute;
+   top: -40;
+   left: -500;
 
+   background-size: 100% 100%, auto;
+   background-image: url("mons1/40.png");
+   box-shadow: 0px 0px 500px blue;
+}
 .CEND {
 
 }
 
 #END {
 	text-align: center;
-	background-image: url("end.gif");
-	background-size: 100% 100%, auto;
+	background: red;
 	position: absolute;
 	width: 420px;
 	height: 620px;
@@ -63,30 +162,17 @@ body{
 	z-index: 3;
 }
 
-#textover{	
-	display: block;
-	margin: auto;
-}
-#distanceED{
+#textover{
 	background-color: black;
 	color: white;
-	display: block;
-	margin: auto;
+	text-align: center;
+	position: absolute;
 	width: 300px;
-	border: 5px solid blue;
+	border: 5px solid yellow;
 	top: 240px;
 	left: 50px;
 }
-#scoreED{
-	background-color: black;
-	color: white;
-	display: block;
-	margin: auto;
-	width: 300px;
-	border: 5px solid blue;
-	top: 240px;
-	left: 50px;
-}
+
 #BG{
 }
 #retry{

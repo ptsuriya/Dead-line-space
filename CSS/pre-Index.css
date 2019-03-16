@@ -49,8 +49,10 @@ img{
 }
 
 .pic1{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
+    top: 80%;
+    position: fixed;
 
 }
 
@@ -59,7 +61,7 @@ img{
     width: 100px;
     transform: rotate(50deg);
     left: 45%;
-    bottom: 45%
+    bottom: 45%;
 }
 .pic2{
     animation: pictwo 2s infinite;
@@ -182,15 +184,14 @@ img{
 
 .bg1{
 
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     border-radius: 50%;
-    box-shadow: 0px 0px 4000px #8A62A2;
-
+    box-shadow: 0px 0px 500px blue;
 }
 
 .bg1{
@@ -199,21 +200,22 @@ img{
 
 @keyframes warp{
     0%{
-        box-shadow: 0px 0px 12000px #9933CC;
+        box-shadow: 0px 0px 12000px #3366ff;
     }
     25%{
-        box-shadow: 0px 0px 7000px #660099;
+        box-shadow: 0px 0px 7000px #66ffff
     }
     50%{
-        box-shadow: 0px 0px 3000px #8A62A2;
+        box-shadow: 0px 0px 3000px #6666cc;
     }
     75%{
-        box-shadow: 0px 0px 7000px #660099;
+        box-shadow: 0px 0px 7000px #ff33cc;
     }
     100%{
         box-shadow: 0px 0px 10000px #9933CC;
     }
 }
+
 @keyframes pictwo{
     0%{
         bottom: 45%;

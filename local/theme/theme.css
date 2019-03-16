@@ -1,5 +1,5 @@
 body{
-	background-color: hsl(230 100% 30%);
+	background-color: black;
 	margin: 0;
 }
 
@@ -8,7 +8,7 @@ body{
 	width: 400px;
 	height: 600px;
 	padding: 10px;
-	border: 5px solid blue;
+	border: 10px outset #f3a4f5;
 	position: fixed;
 	background-image: url("Bggame.gif");
 }

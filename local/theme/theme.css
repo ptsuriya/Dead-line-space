@@ -72,7 +72,8 @@ body{
 
 #END {
 	text-align: center;
-	background: red;
+	background-image: url("end.gif");
+	background-size: 100% 100%, auto;
 	position: absolute;
 	width: 420px;
 	height: 620px;

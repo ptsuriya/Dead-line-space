@@ -49,8 +49,8 @@ img{
 }
 
 .pic1{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     top: 80%;
     position: fixed;
 
@@ -243,15 +243,14 @@ to {bottom: 40%}}
 
 /*   ส่วนของปุ่มกด*/
 
-#play1{
+#play{
     position: absolute;
     left:50vw;
-}
-.playimg{
     width: 350px;
     height: 350px;
 }
-.playimg{
+
+.play1{
     animation: playimg 2s infinite;
 }
 @keyframes playimg{
@@ -266,8 +265,6 @@ to {bottom: 40%}}
     }
 }
 
-.play{
-}
 .play{
     animation: play 3s infinite;
 }

@@ -5,7 +5,7 @@ body{
 
 
 .name{
-    position: absolute;
+    position: fixed;
     font-family: 'Permanent Marker', cursive;
     color: white;
     text-shadow: 7px 3px hsl(80,70%,50%);
@@ -49,8 +49,8 @@ img{
 }
 
 .pic1{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     top: 80%;
     position: fixed;
 
@@ -62,6 +62,7 @@ img{
     transform: rotate(50deg);
     left: 45%;
     bottom: 45%;
+    position: fixed;
 }
 .pic2{
     animation: pictwo 2s infinite;
@@ -75,6 +76,7 @@ img{
     left: 50%;
     top: 45%;
     bottom: 45%;
+    position: fixed;
 }
 .pic3{
     animation: picthree 2s infinite;
@@ -97,6 +99,7 @@ img{
     transform: rotate(120deg);
     left: 35%;
     top: 50%;
+    position: fixed;
 }
 .pic4{
     animation: picfour 2s infinite;
@@ -118,6 +121,7 @@ img{
     transform: rotate(-50deg);
     right: 45%;
     bottom: 45%;
+    position: fixed;
 }
 .pic5{
     animation: picfive 2s infinite;
@@ -140,6 +144,7 @@ img{
     transform: rotate(-50deg);
     right: 55%;
     bottom: 2%;
+    position: fixed;
 }
 .pic6{
     animation: picsix 2s infinite;
@@ -162,6 +167,7 @@ img{
     transform: rotate(-50deg);
     right: 35%;
     top: 50%;
+    position: fixed;
 }
 .pic7{
     animation: picseven 1.7s infinite;
@@ -192,6 +198,7 @@ img{
     bottom: 0;
     border-radius: 50%;
     box-shadow: 0px 0px 500px blue;
+    position: fixed;
 }
 
 .bg1{
@@ -243,55 +250,18 @@ to {bottom: 40%}}
 
 /*   ส่วนของปุ่มกด*/
 
-#play1{
-    position: absolute;
-    left:50vw;
-}
-.playimg{
-    width: 350px;
-    height: 350px;
-}
-.playimg{
-    animation: playimg 2s infinite;
-}
-@keyframes playimg{
-    0%{
-        right: 0px;
-    }
-    50%{
-        right: 4px;
-    }
-    100%{
-        right: 0px;
-    }
-}
 
-.play{
-}
-.play{
-    animation: play 3s infinite;
-}
-
-
-
-.playimg:hover{
+#pp:hover{
 
     transition: 0.2s;
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
 
 }
-
-.textplay{
-
-    display: block;
-    position:absolute;
-    top: 85%;
-    right: 45%;
-    color: red;
-    font-size: 50px;
+#pp{
+    width: 250px;
+    height: 250px;
+    left: 3vw;
 
 }
-
-
 /*   ส่วนของปุ่มกด*/

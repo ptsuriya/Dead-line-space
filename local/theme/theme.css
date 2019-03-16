@@ -10,8 +10,29 @@ body{
 	padding: 10px;
 	border: 5px solid blue;
 	position: fixed;
-	background: black;
+	background-image: url("star.gif");
 }
+
+
+.BG{
+    animation: bg .5s infinite;
+    transform: translateY(30px 20px);
+}
+
+
+
+
+/*    0%{
+        text-shadow: 0px 0px 50px hsl(80,70%,50%);
+    }
+    50%{
+        text-shadow: 0px 0px 100px hsl(80,100%,50%);
+    }
+    100%{
+        text-shadow: 0px 0px 50px hsl(80,70%,50%);
+    }
+}
+*/
 
 #ROCKET{
 	width: 40px;
@@ -26,6 +47,7 @@ body{
 
 #LASER{
     background-image: url("laserRed06.png");
+    box-shadow: 0px 0px 50px red;
     background-size: 100% 100%, auto;
     width: 20px;
     height: 20px;

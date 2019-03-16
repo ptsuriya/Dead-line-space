@@ -1,6 +1,7 @@
 body{
     width: 50vw;
     height:50vh;
+    cursor: url("http://ani.cursors-4u.net/cursors/images13/cur1158.gif") 0 0, default;
 }
 
 
@@ -256,6 +257,7 @@ to {bottom: 40%}}
     transition: 0.2s;
     width: 300px;
     height: 300px;
+    cursor: url("http://ani.cursors-4u.net/cursors/images13/cur1158.gif") 0 0, default;
 
 }
 #pp{
@@ -264,4 +266,5 @@ to {bottom: 40%}}
     left: 3vw;
 
 }
+
 /*   ส่วนของปุ่มกด*/

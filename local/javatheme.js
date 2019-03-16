@@ -2,7 +2,7 @@
 
 
 var rocket = box('ROCKET', 180, 560, 40, 40);
-var laser = box('LASER', -1000, 330, 2, 50);
+var laser = box('LASER', -1000, 330, 5, 50);
 var left=37, right=39, up=38, down=40, specbar=32; // Key code each button.
 var speedrocket = 5;
 var controller = new Object();
@@ -225,7 +225,7 @@ function retry(){
 	score = 0;
 	distance = 0;
 	rocket = box('ROCKET', 180, 560, 40, 40);
-	laser = box('LASER', -1000, 330, 2, 50);
+	laser = box('LASER', -1000, 330, 5, 50);
 	iterations = 0;
 	enemies = new Array();
 	document.getElementById('END').style.visibility="hidden";

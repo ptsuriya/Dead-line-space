@@ -1,0 +1,186 @@
+body{
+	background-color: hsl(230 100% 30%);
+	margin: 0;
+}
+
+.BG{
+	margin: 10px 36%;
+	width: 400px;
+	height: 600px;
+	padding: 10px;
+	border: 5px solid blue;
+	position: fixed;
+	background: black;
+}
+
+#ROCKET{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 10;
+	left: 10;
+	overflow: hidden;
+	background-image: url("playerShip2_orange.png");
+	background-size: 100% 100%, auto;
+}
+
+#LASER{
+    background-image: url("laserRed06.png");
+    background-size: 100% 100%, auto;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.enemy1 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/5.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy2 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/29.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy3 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/14.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy4 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/22.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy5 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/33.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy6 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/9.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy7 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/24.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy8 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/35.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy9 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/3.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy10 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -40;
+  left: -500;
+   background-image: url("mons1/15.png");
+   background-size: 100% 100%, auto;
+   box-shadow: 0px 0px 500px blue;
+}
+.enemy {
+   width: 35px;
+   height: 35px;
+   position: absolute;
+   top: -40;
+   left: -500;
+
+   background-size: 100% 100%, auto;
+   background-image: url("mons1/40.png");
+   box-shadow: 0px 0px 500px blue;
+}
+.CEND {
+
+}
+
+#END {
+	text-align: center;
+	background: red;
+	position: absolute;
+	width: 420px;
+	height: 620px;
+	top: 0;
+	left: 0;
+	color: black;
+	visibility: hidden;
+	z-index: 3;
+}
+
+#textover{
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: absolute;
+	width: 300px;
+	border: 5px solid yellow;
+	top: 240px;
+	left: 50px;
+}
+
+#BG{
+}
+#retry{
+<<<<<<< HEAD
+	width: 5px;
+	left: 50;
+=======
+	margin: 50%; 
+>>>>>>> parent of 020dbd5... add
+}
+

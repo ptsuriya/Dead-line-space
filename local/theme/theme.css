@@ -47,14 +47,13 @@ body{
 
 #LASER{
     background-image: url("laserRed06.png");
-    box-shadow: 0px 0px 10px red;
+    box-shadow: 0px 0px 50px red;
     background-size: 100% 100%, auto;
     width: 20px;
     height: 20px;
     top: 0;
     left: 0;
     position: absolute;
-    background-size: 100;
 }
 
 .enemy {
@@ -85,11 +84,28 @@ body{
 	z-index: 3;
 }
 
-#textover{
-	width: 5px;
-	left: 50;
+#textover{	
+	top: 240px;
+	left: 50px;
 }
-
+#distanceED{
+	background-color: black;
+	color: white;
+	text-align: center;
+	width: 300px;
+	border: 5px solid yellow;
+	top: 240px;
+	left: 50px;
+}
+#scoreED{
+	background-color: black;
+	color: white;
+	text-align: center;
+	width: 300px;
+	border: 5px solid yellow;
+	top: 240px;
+	left: 50px;
+}
 #BG{
 }
 #retry{

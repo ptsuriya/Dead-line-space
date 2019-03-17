@@ -449,7 +449,7 @@ body{
   position: fixed;
   bottom: -100px;
   right: -80px;
-  z-index: 100;
+  z-index: 10;
   animation: star 8s infinite;
 }
 
@@ -538,4 +538,27 @@ body{
   text-shadow: 5px 5px 5px blue;
   transform: rotate(-30deg);
   animation: namegame 2s infinite;
+}
+
+
+#ar1{
+  position: fixed;
+  z-index: 12;
+  bottom: 0px;
+  right: 5px;
+  transform: rotate(165deg);
+  cursor: url("http://ani.cursors-4u.net/cursors/images13/cur1158.gif") 0 0, default;
+
+}
+
+#ar1:hover{
+  position: fixed;
+  z-index: 12;
+  bottom: 0px;
+  right: 5px;
+  transform: rotate(165deg);
+  width: 120px;
+  height: 120px;
+  cursor: url("http://ani.cursors-4u.net/cursors/images13/cur1158.gif") 0 0, default;
+
 }

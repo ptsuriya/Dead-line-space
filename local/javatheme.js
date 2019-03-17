@@ -8,7 +8,7 @@ var speedrocket = 5;
 var controller = new Object();
 var last_looprun = 0;
 
-var iterations = 0;
+
 var distance = 0;
 var score = 0;
 var enemies = new Array();
@@ -18,7 +18,6 @@ function main(){
 	// Main Function has loop with date() function.
 	//var x = new Date().getTime();
 	//console.log(x);
-
 	if (new Date().getTime() - last_looprun > 16.50 && stat == 0){ // <--- FPS per 1000 millisecond.
 		addEnemy();
 		show(); // This Function For Show Object to div.
@@ -32,7 +31,7 @@ function main(){
         laser.y = -9999;
     }
     last_looprun = new Date().getTime();
-    iterations += 0.001;
+  
     if(laser.y == rocket.y - laser.h){
       document.getElementById('laser1').currentTime = 0;
       sound('laser1');
@@ -214,7 +213,7 @@ function addEnemy() {
     } else if (distance > 500) {
       element.className = 'enemy1';
     }else{
-      element.className = 'enemy1';
+      element.className = 'enemy';
     }
     document.body.children[0].appendChild(element);
     enemies[enemies.length] = enemy;
@@ -230,16 +229,40 @@ function getRandom(min,max) {
 function dissa() {
   for (var i = 0; i < enemies.length; i++) {
     if (hit(laser, enemies[i])) {
+      document.createElement('div').className = 'boom';
       var element = document.getElementById(enemies[i].idee);
       element.style.visibility = 'hidden';
       element.parentNode.removeChild(element);
       enemies.splice(i, 1);
       i--;
       laser.y = -laser.h;
-      score += 100;
+      if(distance > 6000){
+        score += 500;
+      }else if (distance > 5000) {
+        score += 325;
+      } else if (distance > 4500) {
+        score += 300;
+      } else if (distance > 4000) {
+        score += 275;
+      }else if (distance > 3000) {
+        score += 250;
+      } else if (distance > 2500) {
+        score += 225;
+      } else if (distance > 2000) {
+        score += 200;
+      }else if (distance > 1500) {
+        score += 175;
+      } else if (distance > 10000) {
+        score += 150;
+      } else if (distance > 500) {
+        score += 125;
+      }else{
+        score += 100;
+      }
+      document.getElementById('boom').volume = 0.25;
       document.getElementById('boom').currentTime = 0;
       sound('boom');
-    } else if (hit(rocket, enemies[i])) {
+          } else if (hit(rocket, enemies[i])) {
     	stat = 1;
       sound('lose');
   	} 
@@ -270,7 +293,6 @@ function retry(){
 	distance = 0;
 	rocket = box('ROCKET', 180, 560, 40, 40);
 	laser = box('LASER', -1000, 330, 15, 50);
-	iterations = 0;
 	enemies = new Array();
 	document.getElementById('END').style.visibility="hidden";
 }

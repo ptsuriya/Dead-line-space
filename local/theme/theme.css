@@ -375,6 +375,7 @@ body{
 }
 #distance{
   position: fixed;
+  z-index: 8;
   left: 40px;
   top: 105px;
   margin-right: 100px;
@@ -392,6 +393,7 @@ body{
 }
 #score{
   position: fixed;
+  z-index: 2;
   left: 40px;
   top: 193px;
   margin-right: 100px;

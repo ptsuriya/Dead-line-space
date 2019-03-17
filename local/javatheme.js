@@ -95,7 +95,7 @@ function moverocket(){
         ckshowposition()
     }
     if(controller.specbar && laser.y < 0){
-        laser.x = rocket.x + 25; // Font laser gun able change this for type object. 
+        laser.x = rocket.x + 14; // Font laser gun able change this for type object. 
         laser.y = rocket.y - laser.h;
     }
     blockrocket(rocket);
@@ -214,22 +214,9 @@ function addEnemy() {
     } else if (distance > 500) {
       element.className = 'enemy1';
     }else{
-      element.className = 'enemy';
+      element.className = 'enemy1';
     }
-    // var h = document.getElementsByClassName('enemy');
-    //document.getElementById(enemy.idee).src = "BGI/Monsters/2.png";
-    //element.src = 'BGI/Monsters/2.png'
-    // h.style.backgroundImage = "url('abc.png')";
-    // h.style.backgroundSize = "100% 100%, auto";
-    ////document.body.style.backgroundImage = "url('img_tree.png')";
-    // h.innerHTML = '<img src="'+randompic+'" />';
-    // img.src = randompic;
-    // document.getElementById(enemy.idee).appendChild(element);
     document.body.children[0].appendChild(element);
-    //document.getElementById(enemy.idee).style.backgroundImage = url('BGI/Monsters/2.png');
-    
-    // console.log(document.getElementById(enemy.idee).src);
-    // console.log(document.getElementById(enemy.idee).style.backgroundImage);
     enemies[enemies.length] = enemy;
 
 
@@ -255,7 +242,6 @@ function dissa() {
     } else if (hit(rocket, enemies[i])) {
     	stat = 1;
       sound('lose');
-      	end();
   	} 
       else if (enemies[i].y + enemies[i].h >= 590) {
       var element = document.getElementById(enemies[i].idee);

@@ -7,17 +7,13 @@ var left=37, right=39, up=38, down=40, specbar=32; // Key code each button.
 var speedrocket = 5;
 var controller = new Object();
 var last_looprun = 0;
-
-
 var distance = 0;
 var score = 0;
 var enemies = new Array();
 var stat = 0;
 
 function main(){
-	// Main Function has loop with date() function.
-	//var x = new Date().getTime();
-	//console.log(x);
+	// Main Function has loop with date() and setTimeout function.
 	if (new Date().getTime() - last_looprun > 16.00 && stat == 0){ // <--- FPS per 1000 millisecond.
 		addEnemy();
 		show(); // This Function For Show Object to div.
@@ -154,7 +150,8 @@ function updatePosition(){
     laser.y -= 12;
 }
 
-function ckshowposition(){ // This Function For checking position of ROCKET.
+function ckshowposition(){ 
+// This Function For checking position of ROCKET.
 	document.getElementById("check1").innerHTML = "X="+rocket.x+" Y="+rocket.y;
 }
 
@@ -188,11 +185,8 @@ function addEnemy() {
     
     var element = document.createElement('div');
     
-    // var randompic = 'BGI/Monsters/1.png';
-    // var image = document.createElement("IMG");
-    // var imageParent = document.getElementById(enemy.idee);
     element.id = enemy.idee;
-    if(distance > 6000){
+    if(distance > 6000){ // About this condition can change rules of this game. 
       element.className = 'enemy10';
     }else if (distance > 5000) {
       element.className = 'enemy9';
@@ -236,7 +230,7 @@ function dissa() {
       enemies.splice(i, 1);
       i--;
       laser.y = -laser.h;
-      if(distance > 6000){
+      if(distance > 6000){ // This condition can set score each stage by distance.
         score += 500;
       }else if (distance > 5000) {
         score += 325;
@@ -284,8 +278,6 @@ function retry(){
 	for (var i = 0; i < enemies.length; i++) {
       var element = document.getElementById(enemies[i].idee);
       element.style.visibility = 'hidden';
-      // element.parentNode.removeChild(element);
-      // enemies.splice(i, 1);
   	}
 	stat = 0;
 	last_looprun = 0;
@@ -301,12 +293,4 @@ function sound(id){
   snd.play();
   }
 
-function end() {
-	//name2.style.top = -400 + 'px';
-	//var elem = document.getElementById(rocket.idee);
-	//elem.parentNode.removeChild(elem);
-  //var element = document.getElementById('cgameover');
-  //element.style.visibility = 'visible';
-  //element.style.zIndex = "3";
-}
 main();

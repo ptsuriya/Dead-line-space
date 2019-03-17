@@ -2,7 +2,7 @@
 
 
 var rocket = box('ROCKET', 180, 560, 40, 40);
-var laser = box('LASER', -1000, 330, 10, 50);
+var laser = box('LASER', -1000, 330, 15, 50);
 var left=37, right=39, up=38, down=40, specbar=32; // Key code each button.
 var speedrocket = 5;
 var controller = new Object();
@@ -28,11 +28,15 @@ function main(){
 		document.getElementById("distance").innerHTML = "Distance : "+distance;
 		document.getElementById('score').innerHTML="Your Score : "+score;
 		distance++;
-        if(laser.y<0){
-            laser.y = -9999;
-        }
-        last_looprun = new Date().getTime();
-        iterations += 0.001;
+    if(laser.y<0){
+        laser.y = -9999;
+    }
+    last_looprun = new Date().getTime();
+    iterations += 0.001;
+    if(laser.y == rocket.y - laser.h){
+      document.getElementById('laser1').currentTime = 0;
+      sound('laser1');
+    }
 	}
 	else if(stat == 1){
 		document.getElementById('END').style.visibility="visible";
@@ -185,7 +189,7 @@ function addEnemy() {
     
     var element = document.createElement('div');
     
-    var randompic = 'BGI/Monsters/1.png';
+    // var randompic = 'BGI/Monsters/1.png';
     // var image = document.createElement("IMG");
     // var imageParent = document.getElementById(enemy.idee);
     element.id = enemy.idee;
@@ -209,8 +213,7 @@ function addEnemy() {
       element.className = 'enemy2';
     } else if (distance > 500) {
       element.className = 'enemy1';
-    }
-    else{
+    }else{
       element.className = 'enemy';
     }
     // var h = document.getElementsByClassName('enemy');
@@ -247,8 +250,11 @@ function dissa() {
       i--;
       laser.y = -laser.h;
       score += 100;
+      document.getElementById('boom').currentTime = 0;
+      sound('boom');
     } else if (hit(rocket, enemies[i])) {
     	stat = 1;
+      sound('lose');
       	end();
   	} 
       else if (enemies[i].y + enemies[i].h >= 590) {
@@ -277,11 +283,15 @@ function retry(){
 	score = 0;
 	distance = 0;
 	rocket = box('ROCKET', 180, 560, 40, 40);
-	laser = box('LASER', -1000, 330, 2, 50);
+	laser = box('LASER', -1000, 330, 15, 50);
 	iterations = 0;
 	enemies = new Array();
 	document.getElementById('END').style.visibility="hidden";
 }
+function sound(id){
+  var snd = document.getElementById(id);
+  snd.play();
+  }
 
 function end() {
 	//name2.style.top = -400 + 'px';

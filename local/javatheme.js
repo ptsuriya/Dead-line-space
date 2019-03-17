@@ -247,7 +247,10 @@ function dissa() {
       i--;
       laser.y = -laser.h;
       score += 100;
+      document.getElementById('boom').currentTime = 0;
+      sound('boom');
     } else if (hit(rocket, enemies[i])) {
+      sound('lose');
     	stat = 1;
       	end();
   	} 
@@ -282,6 +285,10 @@ function retry(){
 	enemies = new Array();
 	document.getElementById('END').style.visibility="hidden";
 }
+function sound(id){
+  var snd = document.getElementById(id);
+  snd.play();
+  }
 
 function end() {
 	//name2.style.top = -400 + 'px';

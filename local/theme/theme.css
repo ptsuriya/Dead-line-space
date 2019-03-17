@@ -56,7 +56,9 @@ body{
   width: 400px;
   height: 600px;
   padding: 10px;
-  border: 10px outset #f3a4f5;
+  border: 10px outset grey;
+  border-radius: 4%;
+  box-shadow: 0px 0px 250px #1E90FF;
   position: fixed;
   background-image: url("Bggame.gif");
 }
@@ -355,12 +357,13 @@ body{
   position: fixed;
   left: 40px;
   width: 200px;
-  height: 38px;
+  height: 30px;
   text-align: center;
   bottom: 50px;
   border: 2px solid white;
   color:gray;
   background-color: hsl(270,100%,0%);
+  padding: 5px;
 /*  box-shadow: 0px 0px 25px green;*/
   /*border: solid 10px pink;*/
 
@@ -378,39 +381,48 @@ body{
     }
 }
 #distance{
+  background-color: grey;
   position: fixed;
+  font-family: 'Satisfy', cursive;
   z-index: 8;
   left: 40px;
   top: 105px;
   margin-right: 100px;
-  width: 380px;
-  height: 50px;
+  width: 320px;
+  height: 40px;
   text-align: center;
+  border-radius: 10%;
+  border: 1px solid grey;
+  padding: 5px;
 
 
-  color:gray;
+  color:white;
 /*  box-shadow: 0px 0px 25px green;*/
   /*border: solid 10px pink;*/
 
-  opacity: 1;
+  opacity: 0.60;
   animation: check 1s infinite;
 }
 #score{
+  background-color: grey;
   position: fixed;
+  font-family: 'Satisfy', cursive;
   z-index: 2;
   left: 40px;
   top: 193px;
   margin-right: 100px;
-  width: 380px;
-  height: 50px;
+  width: 320px;
+  height: 40px;
   text-align: center;
+  border-radius: 10%;
+  border: 1px solid grey;
+  padding: 5px;
 
-
-  color:gray;
+  color:white;
 /*  box-shadow: 0px 0px 25px green;*/
   /*border: solid 10px pink;*/
 
-  opacity: 1;
+  opacity: 0.60;
   animation: check 1s infinite;
 }
 
@@ -437,16 +449,93 @@ body{
   position: fixed;
   bottom: -100px;
   right: -80px;
+  z-index: 100;
+  animation: star 8s infinite;
 }
+
+@keyframes star{
+    0%{
+        top: 50%;
+    }
+    50%{
+       top: 45%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+
 
 #rulesgame{
   z-index:3;
-  background: white;
-  height: 100px;
+  background: silver;
+  height: 85px;
   width: 300px;
   border: 5px solid grey;
   border-radius: 5%;
   position: fixed;
   right: 40px;
   top: 40px;
+  padding: 10px;
+  box-shadow: 0px 0px 80px silver;
+  
+}
+
+#roc{
+  width: 40px;
+  height: 80px;
+}
+@keyframes namegame{
+  0%{
+    font-size:19px;
+    text-shadow:5px 5px 5px yellow;
+  }
+  25%{
+    font-size:20.5px;
+    text-shadow:10px 10px 10px red;
+  }
+  50%{
+    font-size:21.5px;
+    text-shadow:15px 15px 15px blue;
+  }
+  75%{
+    font-size:20.5px;
+    text-shadow:10px 10px 10px red;
+  }
+  100%{
+    font-size:19px;
+    text-shadow:5px 5px 5px yellow;
+  }
+}
+
+#endgame{
+  position: fixed;
+  font-family: 'Permanent Marker', cursive;
+  background-color: black;
+  color: white;
+  width: 270px;
+  height: 130px;
+  top: 300px;
+  left: 73px;
+}
+#retry{
+  position: absolute;
+  top: 420px;
+  left: 110px;
+}
+#namegame{
+  position: fixed;
+  font-family: 'Satisfy', cursive;
+  color: white;
+/*  background-color: white;*/
+  text-align:center;
+  /*border: 5px solid white;*/
+  width: 500px;
+  height: 100px;
+  top:380px;
+  font-size: 19px;
+  left: 0px;
+  text-shadow: 5px 5px 5px blue;
+  transform: rotate(-30deg);
+  animation: namegame 2s infinite;
 }

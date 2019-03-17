@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="theme/theme.css">
 	<title>DEAD LINE SPACE</title>
 </head>
-<body>
+<body background="theme/stargif.gif">
 
 <div class="BG">
 	<div id="BG"></div>
@@ -22,12 +22,16 @@
 </div>
 
 <embed src="BGM/Psychic_Need.mp3" width="180" height="90" loop="true" autostart="true" hidden="true"/>
+<div id="rulesgame"><h1 id="whitespace"></h1></div>
+	<h2 id="check1">Checking</h1>
+<h1 id="distance">Waiting</h1>
+<h1 id="score">Score Waiting...</h1>
+<script src="javatheme.js" onload="main()"></script>
 
-<h1 style="background-color: white; position: fixed; left:30px; " id="check1">Checking<h1>
-<h1 style="background-color: white; position: fixed; left:30px; top:100px;" id="distance">Waiting</h1>
-<h1 style="background-color: white; position: fixed; left:30px; top:180px;" id="score">Score Waiting...</h1><script src="javatheme.js" onload="main()"></script>
-
-   <img src="theme/g1.png">
+   <!-- <img src="theme/g1.png"> -->
+   <!-- <img src="theme/g1.png"> -->
+   <img id="imgb" src="theme/p4.png" width="500px" height="500px">
+   <img id="imgc" src="theme/p6.png" width="900px" height="380px">
 <audio id="laser1" source src="SE/sfx_laser1.ogg" type="audio/ogg">
 </audio>
 <audio id="laser2" source src="SE/sfx_laser2.ogg" type="audio/ogg">

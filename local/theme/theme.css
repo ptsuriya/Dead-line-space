@@ -174,7 +174,7 @@ body{
   position: absolute;
   top: -40;
   left: -500;
-   background-image: url("mons1/22.png");
+   background-image: url("mons1/3.png");
    background-size: 100% 100%, auto;
    border-radius: 100%;
    box-shadow: 0px 0px 150px blue;
@@ -208,7 +208,7 @@ body{
 }
 
 @keyframes e6{
-  0%{
+  0%{file:///C:/Users/pc/Desktop/ggw/theme/gameover-1.png
       box-shadow: 0px 0px 200px hsl(230 100% 50%);
     }
 
@@ -227,6 +227,7 @@ body{
   top: -40;
   left: -500;
    background-image: url("mons1/24.png");
+   background-size: 100% 100%, auto;
    border-radius: 100%;
    box-shadow: 0px 0px 150px blue;
   animation: e7 1s infinite;
@@ -234,7 +235,7 @@ body{
 
 @keyframes e7{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
+      box-shadow: 0px 0px 200px hsl(240, 100%, 62%);
     }
 
   50%{
@@ -242,7 +243,7 @@ body{
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 70px hsl(240, 100%, 62%);
     }
 }
 .enemy8 {
@@ -338,7 +339,7 @@ body{
 
 @keyframes e{
   0%{
-      box-shadow: 0px 0px 200px hsl(190, 70%, 85%);
+      box-shadow: 0px 0px 10px hsl(240, 100%, 62%);
     }
 
   50%{
@@ -346,7 +347,7 @@ body{
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(190, 70%, 85%);
+      box-shadow: 0px 0px 10px hsl(240, 100%, 62%);
     }
 }
 

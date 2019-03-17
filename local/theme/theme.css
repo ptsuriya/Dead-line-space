@@ -2,6 +2,50 @@ body{
   background-color: black;
   margin: 0;;
   cursor: url("http://ani.cursors-4u.net/cursors/images13/cur1158.gif") 0 0, default;
+  background-image: url("stargif.gif");
+  
+}
+#imgf{
+  position: fixed;
+  top: 0px;
+  right: -80px;
+}
+
+#imgf {
+  animation: imgf 5s infinite;
+}
+
+@keyframes imgf{
+    0%{
+        top: 0%;
+    }
+    50%{
+       top: 5%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+
+.bdg{
+  background-image: url("stargif.gif");
+  animation: b1 240s infinite;
+  z-index: -1;
+  position: fixed;
+  top: -1500px;
+  left: -1500px;
+  width: 5000px;
+  height: 5000px;
+}
+
+@keyframes b1{
+  0%{
+      transform: rotate(0deg);
+    }
+
+  100%{
+      transform: rotate(350deg);
+    }
 }
 
 .BG{
@@ -54,15 +98,12 @@ body{
 
 @keyframes e1{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
+      box-shadow: 0px 0px 0px hsl(143, 38%, 0%);
     }
 
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
-    }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(143, 38%, 48%);
     }
 }
 
@@ -81,15 +122,12 @@ body{
 
 @keyframes e2{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
+      box-shadow: 0px 0px 0px hsl(143, 100%, 0%);
     }
 
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
-    }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(143, 100%, 77%);
     }
 }
 .enemy3 {
@@ -107,15 +145,11 @@ body{
 
 @keyframes e3{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+      box-shadow: 0px 0px 0px hsl(351, 100%,0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(351, 100%, 77%);
     }
 }
 .enemy4 {
@@ -133,15 +167,11 @@ body{
 
 @keyframes e4{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+      box-shadow: 0px 0px 0px hsl(60, 100%, 0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(60, 100%, 77%);
     }
 }
 
@@ -160,15 +190,11 @@ body{
 
 @keyframes e5{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+      box-shadow: 0px 0px 0px hsl(298, 100%, 0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(298, 100%, 77%);
     }
 }
 .enemy6 {
@@ -185,16 +211,12 @@ body{
 }
 
 @keyframes e6{
-  0%{file:///C:/Users/pc/Desktop/ggw/theme/gameover-1.png
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+  0%{
+      box-shadow: 0px 0px 0px hsl(168, 100%, 0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(168, 100%, 77%);
     }
 }
 .enemy7 {
@@ -212,15 +234,11 @@ body{
 
 @keyframes e7{
   0%{
-      box-shadow: 0px 0px 200px hsl(240, 100%, 62%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+      box-shadow: 0px 0px 0px hsl(54, 100%, 0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(240, 100%, 62%);
+      box-shadow: 0px 0px 20px hsl(54, 100%, 100%);
     }
 }
 .enemy8 {
@@ -238,15 +256,12 @@ body{
 
 @keyframes e8{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
+      box-shadow: 0px 0px 0px hsl(54, 100%, 0%);
     }
 
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
-    }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(54, 100%, 65%);
     }
 }
 .enemy9 {
@@ -264,15 +279,11 @@ body{
 
 @keyframes e9{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+      box-shadow: 0px 0px 0px hsl(40, 100%, 0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(40, 100%, 65%);
     }
 }
 .enemy10 {
@@ -290,15 +301,11 @@ body{
 
 @keyframes e10{
   0%{
-      box-shadow: 0px 0px 200px hsl(230 100% 50%);
-    }
-
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
+      box-shadow: 0px 0px 0px hsl(185, 32%, 0%);
     }
 
   100%{
-      box-shadow: 0px 0px 70px hsl(310 0% 50%);
+      box-shadow: 0px 0px 20px hsl(185, 32%, 65%);
     }
 }
 .enemy {
@@ -310,21 +317,18 @@ body{
    background-size: 100% 100%, auto;
    background-image: url("mons1/1.png");
    border-radius: 100%;
-   box-shadow: 0px 0px 150px blue;
+   box-shadow: 0px 0px 10px blue;
    animation: e 1s infinite;
 }
 
 @keyframes e{
   0%{
-      box-shadow: 0px 0px 10px hsl(240, 100%, 62%);
+      box-shadow: 0px 0px 0px hsl(240, 100%, 0%);
     }
 
-  50%{
-      box-shadow: 0px 0px 150px hsl(190, 100%, 0%);
-    }
 
   100%{
-      box-shadow: 0px 0px 10px hsl(240, 100%, 62%);
+      box-shadow: 0px 0px 20px hsl(240, 100%, 62%);
     }
 }
 
@@ -356,7 +360,7 @@ body{
   bottom: 50px;
   border: 2px solid white;
   color:gray;
-  background-color: hsl(270 100% 0%);
+  background-color: hsl(270,100%,0%);
 /*  box-shadow: 0px 0px 25px green;*/
   /*border: solid 10px pink;*/
 
@@ -434,6 +438,7 @@ body{
 }
 
 #rulesgame{
+  z-index:3;
   background: white;
   height: 100px;
   width: 300px;

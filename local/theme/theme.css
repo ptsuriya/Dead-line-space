@@ -3,7 +3,7 @@ body{
   margin: 0;;
   cursor: url("http://ani.cursors-4u.net/cursors/images13/cur1158.gif") 0 0, default;
   background-image: url("stargif.gif");
-
+   
 }
 #imgf{
   position: fixed;
@@ -450,19 +450,3 @@ body{
   right: 40px;
   top: 40px;
 }
-#endgame{
-  position: absolute;
-  top:280px;
-  left: 35px;
-  height: 130px;
-  width: 350px;
-  background-color: black;
-  color: white;
-  font-family: cursive;
-}
-#retry{
-  position: absolute;
-  bottom: 0px;
-  left:110px;
-}
-

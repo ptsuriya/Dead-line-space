@@ -18,7 +18,7 @@ function main(){
 	// Main Function has loop with date() function.
 	//var x = new Date().getTime();
 	//console.log(x);
-	if (new Date().getTime() - last_looprun > 16.50 && stat == 0){ // <--- FPS per 1000 millisecond.
+	if (new Date().getTime() - last_looprun > 15 && stat == 0){ // <--- FPS per 1000 millisecond.
 		addEnemy();
 		show(); // This Function For Show Object to div.
 		updatePosition(); // speed of laser.
